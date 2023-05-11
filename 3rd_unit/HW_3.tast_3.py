@@ -2,11 +2,7 @@
 
 
 def even_sum(lst):
-    list_cleared = []
-    for index, value in enumerate(lst):
-        if index % 2 == 0:
-            list_cleared.append(value)
-    sum_list = sum(list_cleared)
+    sum_list = sum(lst[0:: 2])
     return sum_list
 
 
