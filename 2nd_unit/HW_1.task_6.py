@@ -1,11 +1,11 @@
 #Дана строка. Напишите программу удаления символов, которые имеют нечетные значения индекса заданной строки.
-
-while True:
-    string = input("Введите строку: ")
-    if len(string) > 0:
-        break
-
-print(string[::2])
+#
+# while True:
+#     string = input("Введите строку: ")
+#     if len(string) > 0:
+#         break
+#
+# print(string[::2])
 
 #другой способ
 string = input("Введите строку: ")
