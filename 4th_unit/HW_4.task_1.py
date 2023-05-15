@@ -5,11 +5,10 @@
 # Например 1, 1, 1 --> "Равносторонний"
 
 def which_triangle(a, b, c):
-    type_triangle = ""
     if (a + b > c) and (a + c > b) and (b + c > a):
         if a == b and a == c:
             type_triangle = "Равносторонний"
-        elif (a == b and a != c) or (b == c and b != a) or (a == c and a != b):
+        elif (a == b) or (b == c) or (a == c):
             type_triangle = "Равнобедренный"
         else:
             type_triangle = "Обычный"
