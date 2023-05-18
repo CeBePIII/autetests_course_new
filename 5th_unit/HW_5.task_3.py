@@ -25,11 +25,8 @@ def everything_for_your_cat(cats_data):
     @param cats_data: кортеж типа Домашнее животное, возраст, имя, фамилия владельца
     @return: Строка с данными из котрежей
     """
-    merged = []
     cat_dict = {}
     our_str = ""
-    for lst in data:
-        merged.extend(lst)
     for cat_index in cats_data:
         if f'{cat_index[2]} {cat_index[3]}' not in cat_dict:
             cat_dict[f'{cat_index[2]} {cat_index[3]}'] = f'{cat_index[0]}, {cat_index[1]}'
