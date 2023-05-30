@@ -18,13 +18,10 @@ import unittest  # Не удалять
 
 
 # Здесь пишем код
-class CustomError(Exception):
-    pass
-
 
 def treatment_sum(our_tuple):
     if len(our_tuple) > 2:
-        raise CustomError("Много данных")
+        raise Exception("Много данных")
     try:
         return our_tuple[0] + our_tuple[1]
     except TypeError:

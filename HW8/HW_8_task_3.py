@@ -8,18 +8,13 @@
 
 
 # Здесь пишем код
-import traceback
 
 
 def segment(x1y1, x2y2):
     try:
         return x1y1[0] + x1y1[1] + x2y2[0] + x2y2[1]
     except Exception as err:
-        err = traceback.format_exc()
-        err = err[err.find("TypeError"):]
-        err_reversed = err.partition(":")[2]
-        return (err_reversed[::-1]).strip()
-
+        return str(err)[::-1]
 
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
